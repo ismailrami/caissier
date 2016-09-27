@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cadre" 
+    android:paddingBottom="15dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="10dp"
+    >
+
+    <Button
+        android:id="@+id/btZero"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btPoint"
+        android:layout_alignBottom="@+id/btPoint"
+        android:layout_toRightOf="@+id/btPoint"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btZero"
+        android:layout_toRightOf="@+id/btZero"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/btSeven"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btZero"
+        android:layout_alignLeft="@+id/btPoint"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/btEigth"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btSeven"
+        android:layout_alignBottom="@+id/btSeven"
+        android:layout_alignLeft="@+id/btZero"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/btNine"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btEigth"
+        android:layout_toRightOf="@+id/btZero"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/btFour"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btSeven"
+        android:layout_alignLeft="@+id/btSeven"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btFive"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btFour"
+        android:layout_alignBottom="@+id/btFour"
+        android:layout_alignLeft="@+id/btEigth"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btSix"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_alignBaseline="@+id/btFive"
+        android:layout_alignBottom="@+id/btFive"
+        android:layout_toRightOf="@+id/btFive"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/btOne"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btFour"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/btFive"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btTow"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btOne"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@+id/btFour"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btCach"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priceHtupdate"
+        android:layout_alignLeft="@+id/priceHtupdate"
+        android:layout_marginBottom="16dp"
+        android:text="Especes" />
+
+
+    <TextView
+        android:id="@+id/priceHtupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btOne"
+        android:layout_alignLeft="@+id/btOne"
+        android:layout_marginBottom="14dp"
+        android:text="Tapez le montant reçu en especes" />
+
+    <Button
+        android:id="@+id/btCarte"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btChek"
+        android:layout_toRightOf="@+id/btChek"
+        android:text="Carte Bleu" />
+
+    <Button
+        android:id="@+id/btChek"
+        android:background="@drawable/btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_alignBaseline="@+id/btCach"
+        android:layout_alignBottom="@+id/btCach"
+        android:layout_toRightOf="@+id/btCach"
+        android:text="Cheque" />
+
+    <Button
+        android:id="@+id/btThree"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btFive"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/btFive"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/screenNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btSix"
+        android:layout_alignBottom="@+id/btSix"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/priceHtupdate"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btSetFree"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btCancel"
+        android:background="@drawable/btn"
+        android:text="Liberer" />
+
+    <Button
+        android:id="@+id/btPoint"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btSetFree"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="20dp"
+        android:text="," />
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:background="@drawable/btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/screenNumber"
+        android:layout_below="@+id/btNine"
+        android:text="Valider" />
+
+    <ListView
+        android:id="@+id/moneylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/restMoney"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/restMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btChek"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/btChek"
+        android:layout_marginBottom="20dp"
+        android:text="A rendre" />
+
+    <TextView
+        android:id="@+id/restCach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btCarte"
+        android:layout_alignRight="@+id/btCarte"
+        
+        android:layout_marginBottom="20dp"
+         />
+
+</RelativeLayout>

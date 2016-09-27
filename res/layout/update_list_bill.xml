@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/cadre" >
+
+    <TextView
+        android:id="@+id/priceHtupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp"
+        android:text="Prix HT" />
+
+    <TextView
+        android:id="@+id/restCach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priceHtupdate"
+        android:layout_alignTop="@+id/priceHtupdate"
+        android:layout_marginTop="34dp"
+        android:text="TVA" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/restCach"
+        android:layout_below="@+id/restCach"
+        android:layout_marginTop="10dp"
+        android:text="Prix total" />
+
+    <TextView
+        android:id="@+id/updatedpriceht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/priceHtupdate"
+        android:layout_alignBottom="@+id/priceHtupdate"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/updatedtva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/restCach"
+        android:layout_alignRight="@+id/updatedpriceht" />
+
+    <TextView
+        android:id="@+id/updatedall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/updatedtva" />
+
+    <ExpandableListView
+        android:id="@+id/updateexpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priceHtupdate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" >
+
+    </ExpandableListView>
+    <Button 
+        android:id="@+id/toPay"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn"
+        android:text="Passer a encaissement"
+        android:layout_below="@+id/textView3"/>
+
+</RelativeLayout>

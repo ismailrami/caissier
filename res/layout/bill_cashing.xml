@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cadre" 
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/btSepar" />
+
+    <Button
+        android:id="@+id/btUpdateOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/btUpdateOrder" />
+
+    <TextView
+        android:id="@+id/priceHtupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="Prix TTC" />
+
+    <TextView
+        android:id="@+id/screenNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priceHtupdate"
+        android:layout_alignLeft="@+id/priceHtupdate"
+        android:layout_marginBottom="22dp"
+        android:text="TVA" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/screenNumber"
+        android:layout_alignLeft="@+id/screenNumber"
+        android:layout_marginBottom="20dp"
+        android:text="Prix HT" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/screenNumber" />
+
+    <ExpandableListView
+        android:id="@+id/orderlinelist"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/textView3"
+        android:dividerHeight="0px"
+         >
+
+    </ExpandableListView>
+
+</RelativeLayout>

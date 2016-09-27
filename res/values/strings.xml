@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title">RestoCommand</string>
+    <string name="app_name">Caissier</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btSend">Envoyer</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="btSeePlan">Voir le plan</string>
+    <string name="btOrderDelev">Commande a emporter</string>
+    <string name="labAllTable">Table en cours</string>
+    <string name="btUpdateOrder">Modifier commande</string>
+    <string name="btSepar">Séparer encaissement</string>
+    <string name="menu">Menu</string>
+    <string name="valid">Valider</string>
+    <string name="allTable">Tables</string>
+    <string name="allOrder">Orders</string>
+    <string name="btList">Liste</string>
+    <string name="btGrid">Grille</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="headerCaching">aaaaaaa</string>
+
+</resources>

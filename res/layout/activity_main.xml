@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.resto.caissier.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="1000dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#205569"
+    android:layout_toLeftOf="@+id/fragmentContainer">
+    <TextView 
+        android:id="@+id/pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#f2f6f9"
+        />
+    <Button 
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/logout"/>
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center"
+	    android:layout_marginTop="30dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/logout"
+	    android:id="@+id/linear"
+	   >
+
+    	<Button
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:drawableLeft="@drawable/list_view"
+        android:id="@+id/tables"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/allTable" />
+
+    <Button
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/grid_view_icon"
+        android:id="@+id/orders"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/allOrder" 
+         />
+	</LinearLayout>
+    <Button
+        android:id="@+id/btOrderDelev"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnmain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tableList"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btOrderDelev" />
+
+    <TextView 
+        android:id="@+id/allTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="53dp"
+        android:text="@string/labAllTable"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+   <TextView 
+        android:id="@+id/allOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/linear"
+        android:visibility="gone"
+        android:layout_marginTop="53dp"
+        android:text="Ordres a empoter"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <ListView
+        android:id="@+id/tableList"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/allTable"
+        android:layout_marginTop="10dp"
+        >
+    </ListView>
+    <ListView
+        android:id="@+id/orderdelivmainlist"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:layout_below="@+id/allOrders"
+        android:layout_marginTop="10dp"
+        >
+    </ListView>
+
+    <Button
+        android:id="@+id/btSeePlan"
+        android:layout_width="250dp"
+        android:background="@drawable/btnmain"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btOrderDelev"
+        android:layout_alignLeft="@+id/btOrderDelev"
+        android:layout_alignRight="@+id/btOrderDelev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btSeePlan" />
+
+    
+    </RelativeLayout>
+</RelativeLayout>
